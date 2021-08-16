@@ -1,0 +1,59 @@
+/*MAIN - PAGINA DE MARCAS*/
+.encabezados{
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-weight: bold;
+        padding-top: 1rem;
+        padding-left: 78px;
+        text-align: center;
+        font-size: calc(1.375rem + 1.5vw);
+        padding: 10px;
+        color: #4cfbd3;
+        width: fit-content;
+        border: 3px solid #4CFDB3;
+    }
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin: 5%;
+    align-items: center;
+    
+    .definicion{
+        grid-area: 1/1;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        border-right: dotted 5px #4CFDB3;
+    }
+    .registro{
+        grid-area: 2/2;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        border-left: dotted 5px #4CFDB3;
+    }
+    .derechos{
+        grid-area: 3/1;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        border-right: dotted 5px #4CFDB3;
+    }
+    .asesoramiento{
+        grid-area: 4/2;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        ul{
+            li{
+                display: block;
+                color: whitesmoke;
+                font-size: 1rem;
+                text-decoration: none;
+            }
+        }
+    }
+}    

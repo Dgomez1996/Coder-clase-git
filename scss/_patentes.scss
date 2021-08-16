@@ -1,0 +1,76 @@
+.infoPatentes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    margin: 5%;
+    align-items: center;
+    .definicion{
+        grid-area: 1/1;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        border-right: dotted 5px #4CFDB3;
+    }
+    .registro{
+        grid-area: 2/2;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        border-left: dotted 5px #4CFDB3;
+    }
+    .derechos{
+        grid-area: 3/1;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        border-right: dotted 5px #4CFDB3;
+    }
+    .asesoramiento{
+        grid-area: 4/2;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        border-left: dotted 5px #4CFDB3 ;
+        ul{
+            li{
+                display: block;
+                color: whitesmoke;
+                font-size: 1rem;
+                text-decoration: none;
+            }
+        }
+    }
+    .requisitos{
+        grid-area: 5/1;
+        padding: 1rem;
+        border-top: dotted 5px #4CFDB3;
+        ol{
+            li{
+                list-style: outside;
+                display: block;
+                color: whitesmoke;
+                font-size: 1rem;
+            }
+        }
+    }
+    
+}
+.videoPatente{
+    display: flex;
+} 
+.divPatente{
+    display: flex;
+    margin-left: 1%;
+    margin-top: 50vh;
+    width: 570px;
+    height: 200px;
+    position: absolute;
+    font-weight: bold;
+    font-size: xx-large;
+    color: whitesmoke;
+    flex-direction: column;
+    justify-content: center;
+}
+.gridPatentes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 24px;
+    margin: 3rem;
+    width: 100%;    
+}
