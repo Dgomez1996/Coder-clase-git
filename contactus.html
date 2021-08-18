@@ -14,11 +14,12 @@
 
 <!-- Latest compiled and minified JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link rel="stylesheet" href="/styles/global.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Uchen&display=swap" rel="stylesheet"> 
-    <title> DAMAR - Agencia de consultoria integral sobre derechos de propiedad industrial y diseño web</title>
+    <title> DAMAR - Contáctanos</title>
 </head>
 <body>
     <header class="container-fluid"> 
@@ -41,47 +42,53 @@
             </ul>  
         </nav>
     </header>
-    
-    <main>
-         <div class="divPortada">
-                <h3 class="tituloDePortada">Somos un grupo de profesionales</h1>
-                <p class="parrafoPortada">que pueden ayudarte a iniciar tu <b class="enfasis">emprendimiento</b></p>
-         </div>
-         <div class="tit">
-            <h2> NUESTROS SERVICIOS</h2>
-         </div>
-        <div class="padreInicio">
-            <div class="cajas">
-            <h2>Marcas</h2>
-            <a href="marcas.html"><img class="logoCajas" src="/imagenes/iconos/marca.svg" alt=""></a>
-            <p class="parrafos"> Las marcas nos ayudan a proteger el logo que identifica nuestro producto o servicio de los demas.</p>
+
+    <div class="container">
+        <h1 class="logo">Contáctanos</h1>
+        <div class="infoForm">
+            <div class="contacForm">
+                <h3>Contáctanos</h3>
+                <form action="">
+                    <p>
+                        <label for="fullName">Nombre completo</label>
+                        <input type="text" name="fullName" placeholder="Nombre Completo">
+                    </p>
+                    <p>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" placeholder="juan1234@hotmail.com">
+                    </p>
+                    <p>
+                        <label for="servicio">¿Por qué asunto nos consultas?</label>
+                        <ul>
+                            <li><input type="checkbox" name="servicios" value="1"> Marcas </li>
+                            <li><input type="checkbox" name="servicios" value="2"> Patentes </li>
+                            <li><input type="checkbox" name="servicios" value="3"> Modelos y diseños </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <label for="comentarios"> Dejanos tu consulta
+                            <textarea name=" comentarios" id="" required minlength="4" maxlength="20" rows="4"></textarea>
+                        </label>    
+                    </p>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                </form>
             </div>
-            <div class="cajas">
-            <h2>Patentes</h2>
-            <a href="patentes.html"><img class="logoCajas" src="/imagenes/iconos/patentes.svg" alt=""></a>
-            <p class="parrafos">Las patentes se utilizan para proteger las invenciones y evitar que cualquier persona pueda usarla sin tu consentimiento.</p>
-             </div>
-            <div class="cajas">
-            <h2> Modelos y diseños</h2>
-            <a href="modelosydiseños.html"><img class="logoCajas" src="/imagenes/iconos/modelos.svg" alt=""></a>
-            <p class="parrafos"> Los modelos y diseños industriales se utilizan para proteger la forma estetica y/u ornamental de tus productos.</p>
-            </div>
-            <div class="cajas">
-                <h2>Diseño web</h2>
-                <a href="diseñoweb.html"><img class="logoCajas" src="/imagenes/iconos/diseno-web.svg" alt=""></a>
-                <p class="parrafos">Las páginas web son utilizadas por toda persona que pretenda acercar sus productos o servicios al mundo. Son la ventana al mundo.</p>
-                 </div>
-    </div>
-    </main>
-    <footer>
-        <div>
-            <p class="parrafos"> 2021/ Consultoria Damar. Todos los derechos  reservados</p>
-            <div class="imgFooter">
-                <a href="https://www.facebook.com/"><img class="logoFooter" src="" alt=""></a>
-                <a href="https://twitter.com/?lang=es"><img class="logoFooter" src="" alt=""></a>
+            <div class="infoContact">
+                <h3>Más información</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i>Avenida Juan B. JUsto 1234</li>
+                    <li><i class="fas fa-phone-square-alt"></i>156575343</li>
+                    <li><i class="fas fa-envelope-opne-text"></i>contacto@damar.com</li>
+                    <p>
+                        En virtud de la situación de público conocimiento, solo estamos brindando atención de manera remota. 
+                    </p>
+                    <p>Damar.com</p>
+
+                </ul>
             </div>
         </div>
-    </footer>
-    <script src="/js/bootstrap.min.js"></script>
+
+    </div>
 </body>
 </html>
