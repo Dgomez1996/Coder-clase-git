@@ -43,36 +43,40 @@
             </ul>  
         </nav>
     </header>
-
+    <main>
     <div class="container parrafos">
         <h1 class="logo">Contáctanos</h1>
-        <div class="infoForm">
-            <div class="contactForm">
+        <div class="formulario1">
+            <div class="datos">
                 <h3>Contáctanos</h3>
                 <form action="">
-
+                    <p>
                         <label for="fullName">Nombre completo</label>
-                        <input type="text" name="fullName" placeholder="Nombre Completo">
-                    
-                    
+                        <input class="estiloDeForm" type="text" name="fullName" required placeholder="Nombre Completo">
+                    </p>
+                    <p>
                         <label for="email">Email</label>
-                        <input type="email" name="email" placeholder="juan1234@hotmail.com">
-                   
-                  
+                        <input class="estiloDeForm" type="email" name="email" required placeholder="juan1234@hotmail.com">
+                    </p>    
+                    
+                    <p>
                         <label for="servicio">¿Por qué asunto nos consultas?</label>
                         <ul>
                             <li><input type="checkbox" name="servicios" value="1"> Marcas </li>
                             <li><input type="checkbox" name="servicios" value="2"> Patentes </li>
                             <li><input type="checkbox" name="servicios" value="3"> Modelos y diseños </li>
                         </ul>
-                    
-                   
-                        <label class="block" for="comentarios"> Dejanos tu consulta
-                            <textarea name=" comentarios" id="" required minlength="4" maxlength="20" rows="4"></textarea>
+                   </p>
+                   <p class="block">
+                        <label for="comentarios"> Dejanos tu consulta
+                            <textarea class="estiloDeForm" name=" comentarios" id="" required maxlength="100" rows="4"></textarea>
                         </label>    
-                   
-                    <button class="block" type="submit">Enviar</button>
-                    <button class="block" type="reset">Limpiar</button>
+                   </p>  
+                   <p class="block">
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpiar</button>
+                   </p>   
+                    
                 </form>
             </div>
             <div class="infoContact">
@@ -80,7 +84,7 @@
                 <ul>
                     <li><i class="fas fa-map-marker-alt"></i>  Avenida Juan B. Justo 1234</li>
                     <li><i class="fas fa-phone-square-alt"></i>  156575343</li>
-                    <li><i class="fas fa-envelope-opne-text"></i>  contacto@damar.com</li>
+                    <li><i class="fas fa-envelope-open-text"></i>  contacto@damar.com</li>
                     <p>
                         En virtud de la situación de público conocimiento, solo estamos brindando atención de manera remota. 
                     </p>
@@ -88,7 +92,17 @@
                 </ul>
             </div>
         </div>
-
     </div>
+    </main>
+    <footer>
+        <div>
+            <p class="parrafos"> 2021/ Consultoria Damar. Todos los derechos  reservados</p>
+            <div class="imgFooter">
+                <a href="https://www.facebook.com/"><img class="logoFooter" src="" alt=""></a>
+                <a href="https://twitter.com/?lang=es"><img class="logoFooter" src="" alt=""></a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.min.js"></script>
 </body>
 </html>

@@ -1,3 +1,6 @@
+$tablet:768px;
+$laptop:1024px;
+
 *{
     margin: 0%;
     box-sizing:border-box;
@@ -7,6 +10,7 @@ body{
     font-weight: 100;
     background-color:#0D0D0D;
 }
+
 ul{
    list-style: none;
     font-size: small;
@@ -22,6 +26,105 @@ li{
             }
             
 }
+.content{
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    h1{
+        font-weight: bold;
+        padding-top: 1rem;
+        padding-left: 78px;
+        font-size: calc(1.375rem + 1.5vw);
+        padding: 10px;
+        position: relative;
+        width: auto;
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        color: #4CFDB3;
+    }
+}
+h1:after{
+    content:"";
+    position:absolute ;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+h1:hover:after{
+    animation: animate2 1s linear forwards;
+}
+@keyframes animate2{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: #00fc93;
+    }
+    50%{
+        width: 0;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #00fc93;
+        border-left-color: #00fc93;
+    }
+    100%{
+        width:100%;
+        height: 100%;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: #00fc93;
+        border-left-color: #00fc93;
+    }
+}
+h1:before{
+    content:"";
+    position:absolute ;
+    top: -2px;
+    left: -2px;
+    width: 0;
+    height: 0;
+    background: transparent;
+    border: 2px solid transparent;
+}
+h1:hover:before{
+    animation: animate 1s linear forwards;
+}
+@keyframes animate{
+    0%{
+        width: 0;
+        height: 0;
+        border-top-color: #00fc93;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    50%{
+        width: 100%;
+        height: 0;
+        border-top-color: #00fc93;
+        border-right-color: #00fc93;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+    100%{
+        width: 100%;
+        height: 100%;
+        border-top-color: #00fc93;
+        border-right-color: #00fc93;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+    }
+}    
 .parrafos{
     color: whitesmoke;
 } 
@@ -29,3 +132,9 @@ h2{
     color: #4CFDB3;
     font-style: italic;   
 }   
+
+@media (min-width: $laptop){
+    header main{
+        padding: 0 4rem;
+    }
+}
