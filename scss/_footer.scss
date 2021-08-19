@@ -1,23 +1,31 @@
 footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     width: 100%;
     background-color:#00C976;
     background-image: linear-gradient(to left, #4CFDB3, #00FC93, #257D59); 
-
-    .listFooter{
-    display: flex;
-    padding-right:15%;
-    line-height: 40px;
-    }
-}
-    .imgFooter{
-        grid-area: 1/2;
-        .logoFooter{
-            display:inline-block;
-            width: 20px;
-            height: 20px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    div{
+        p{
+        color: black;
+        width: max-content;
+        font-size: 18px;
+        font-weight: bold;
         }
     }
-    
-    
+}
+.textFooter{
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: x-large;
+    border-right: 1px solid black;
+}
+.imgFooter{
+    padding: 5px;
+    text-align: center;
+    img{
+        height: 35px;
+        width: 35px;
+    }
+}
