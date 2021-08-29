@@ -2,13 +2,7 @@
 $tablet:768px;
 $laptop:1024px;
 
-.logo {
-    text-align: center;
-    font-size: 3em;
-    color: #4cfdb3;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
+
   
 .formulario1 {
     box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
@@ -88,4 +82,13 @@ button{
             display: block;
             margin: 8px;
         }
-}    
+}   
+.maps{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 8rem;
+    h2{
+        width: fit-content;
+    }
+} 
