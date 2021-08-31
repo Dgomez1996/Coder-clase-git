@@ -149,12 +149,18 @@ header {
     transition: color .5s; }
   header .logo:hover {
     color: #ACFDB3; }
-  header .listadoNavegacion {
-    display: flex;
-    padding-right: 5%;
-    line-height: 40px;
-    position: relative; }
-  header .navegacion {
+
+.nav_responsive_ul {
+  display: none; }
+
+.listadoNavegacion {
+  display: flex;
+  padding-right: 5%;
+  line-height: 40px;
+  position: relative;
+  width: 100%;
+  justify-content: flex-end; }
+  .listadoNavegacion .navegacion {
     text-decoration: none;
     color: whitesmoke;
     font-size: small;
@@ -164,15 +170,16 @@ header {
     width: max-content;
     transition: background-color .5s;
     transition: color .5s; }
-  header li:hover > a {
+  .listadoNavegacion li:hover > a {
     color: #ACFDB3; }
-  header .subMenu {
-    position: absolute;
-    display: none; }
-  header .listaSubMenu {
+
+.subMenu {
+  position: absolute;
+  display: none; }
+  .subMenu .listaSubMenu {
     display: block;
     background-color: #272626; }
-  header .links {
+  .subMenu .links {
     text-decoration: none;
     color: whitesmoke;
     font-size: small;
@@ -183,15 +190,75 @@ header {
     animation-duration: 2s;
     animation-name: aparecer; }
 
+.nav_responsive-button-container {
+  position: relative;
+  width: 100%;
+  font-size: 25px;
+  margin-top: -64px;
+  z-index: 100; }
+
+.nav_responsive-button {
+  float: right;
+  padding: 6px 20px;
+  text-align: right;
+  width: 100%;
+  color: #ACFDB3; }
+
+.prueba {
+  display: none; }
+
+@media only screen and (max-width: 768px) {
+  .listadoNavegacion {
+    display: none; }
+  nav {
+    height: 37px;
+    width: 100%; }
+  .menu_responsive {
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start; }
+  .nav_responsive_ul {
+    display: block;
+    position: absolute;
+    width: auto;
+    margin-top: 37px;
+    padding-top: 27px;
+    height: 37px; }
+  .nav_li-container {
+    position: relative;
+    top: -1000px;
+    height: fit-content;
+    background-color: #404040;
+    transition: all 1s;
+    z-index: 1;
+    width: 75%; }
+  .nav_responsive_li {
+    width: 100%;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #acfdb3; }
+  .nav_responsive_li a {
+    text-decoration: none;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 5px;
+    width: 30px;
+    color: whitesmoke;
+    font-size: small;
+    letter-spacing: 5px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100; }
+  .nav_responsive_ul:hover > .nav_li-container {
+    top: -27px; } }
+
 @keyframes aparecer {
   0% {
     opacity: 0; }
   100% {
     opacity: 1; } }
-
-@media only screen and (max-width: 700px) {
-  .listadoNavegacion {
-    display: none; } }
 
 footer {
   width: 100%;
@@ -221,8 +288,7 @@ footer {
     color: #404040;
     font-style: italic; }
   .logo img {
-    width: 50%;
-    position: relative; }
+    width: 50%; }
 
 .terms {
   max-width: 353px;
@@ -272,21 +338,25 @@ footer {
     grid-area: 1/1;
     padding: 1rem;
     border-top: dotted 5px #4CFDB3;
-    border-right: dotted 5px #4CFDB3; }
+    border-right: dotted 5px #4CFDB3;
+    height: 100%; }
   .info .registro {
     grid-area: 2/2;
     padding: 1rem;
     border-top: dotted 5px #4CFDB3;
-    border-left: dotted 5px #4CFDB3; }
+    border-left: dotted 5px #4CFDB3;
+    height: 100%; }
   .info .derechos {
     grid-area: 3/1;
     padding: 1rem;
     border-top: dotted 5px #4CFDB3;
-    border-right: dotted 5px #4CFDB3; }
+    border-right: dotted 5px #4CFDB3;
+    height: 100%; }
   .info .asesoramiento {
     grid-area: 4/2;
     padding: 1rem;
-    border-top: dotted 5px #4CFDB3; }
+    border-top: dotted 5px #4CFDB3;
+    height: 100%; }
     .info .asesoramiento ul li {
       display: block;
       color: whitesmoke;
@@ -303,22 +373,26 @@ footer {
     grid-area: 1/1;
     padding: 1rem;
     border-top: dotted 5px #4CFDB3;
-    border-right: dotted 5px #4CFDB3; }
+    border-right: dotted 5px #4CFDB3;
+    height: 100%; }
   .infoPatentes .registro {
     grid-area: 2/2;
     padding: 1rem;
     border-top: dotted 5px #4CFDB3;
-    border-left: dotted 5px #4CFDB3; }
+    border-left: dotted 5px #4CFDB3;
+    height: 100%; }
   .infoPatentes .derechos {
     grid-area: 3/1;
     padding: 1rem;
     border-top: dotted 5px #4CFDB3;
-    border-right: dotted 5px #4CFDB3; }
+    border-right: dotted 5px #4CFDB3;
+    height: 100%; }
   .infoPatentes .asesoramiento {
     grid-area: 4/2;
     padding: 1rem;
     border-top: dotted 5px #4CFDB3;
-    border-left: dotted 5px #4CFDB3; }
+    border-left: dotted 5px #4CFDB3;
+    height: 100%; }
     .infoPatentes .asesoramiento ul li {
       display: block;
       color: whitesmoke;
@@ -333,6 +407,9 @@ footer {
       display: block;
       color: whitesmoke;
       font-size: 1rem; }
+    .infoPatentes .requisitos a {
+      color: whitesmoke;
+      font-size: 14px; }
 
 .divPatente {
   display: flex;

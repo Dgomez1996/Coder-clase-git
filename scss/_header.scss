@@ -1,4 +1,8 @@
 /*HEADER*/
+
+$tablet:768px;
+$laptop:1024px;
+
 header{
     background-color:#0D0D0D;
     list-style-type: lower-alpha;
@@ -22,48 +26,127 @@ header{
     line-height:40px;
     transition: color .5s;
     }
-    .logo:hover{
+       .logo:hover{
         color: #ACFDB3;
     }
-    .listadoNavegacion{
+}
+.nav_responsive_ul{
+        display: none;
+    }
+.listadoNavegacion{
     display: flex;
-    padding-right:5%;
+    padding-right: 5%;
     line-height: 40px;
     position: relative;
-    }
-    .navegacion{
-    text-decoration: none;
-    color: whitesmoke;
-    font-size:small;
-    letter-spacing: 5px;
-    margin: 10px;
-    text-transform: uppercase;
-    width: max-content; 
-    transition: background-color .5s;
-    transition: color .5s
-    }    
-    li:hover >a{
-        color: #ACFDB3;
-    }   
-    .subMenu{
+    width: 100%;
+    justify-content: flex-end;
+        .navegacion{
+        text-decoration: none;
+        color: whitesmoke;
+        font-size:small;
+        letter-spacing: 5px;
+        margin: 10px;
+        text-transform: uppercase;
+        width: max-content; 
+        transition: background-color .5s;
+        transition: color .5s
+        }    
+        li:hover >a{
+            color: #ACFDB3;
+        }
+}   
+.subMenu{
     position: absolute;
     display: none;
-    }
     .listaSubMenu{
-    display: block;
-    background-color: #272626
+        display: block;
+        background-color: #272626
     }
     .links{
-    text-decoration: none;
-    color: whitesmoke;
-    font-size:small;
-    letter-spacing: 5px;
-    margin: 10px;
-    text-transform: uppercase;
-    width: max-content;
-    animation-duration: 2s;
-    animation-name: aparecer;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size:small;
+        letter-spacing: 5px;
+        margin: 10px;
+        text-transform: uppercase;
+        width: max-content;
+        animation-duration: 2s;
+        animation-name: aparecer;
+        }
+}  
+.nav_responsive-button-container{
+    position:relative;
+    width: 100%;
+    font-size: 25px; 
+    margin-top: -64px;
+    z-index: 100 ;
+}    
+.nav_responsive-button{
+    float: right; 
+    padding: 6px 20px;
+    text-align: right;
+    width: 100%;
+    color: #ACFDB3;
+}  
+.prueba{
+    display: none;
+}
+@media only screen and (max-width:$tablet){
+    .listadoNavegacion{
+            display: none;
+        }
+    nav{
+        height: 37px;
+        width: 100%;
     }
+    .menu_responsive{
+        margin-top: 3px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .nav_responsive_ul{
+        display: block;
+        position: absolute;
+        width: auto;
+        margin-top: 37px;
+        padding-top: 27px;
+        height: 37px;
+    }
+    .nav_li-container{
+        position: relative;
+        top: -1000px;
+        height: fit-content;
+        background-color: #404040;
+        transition: all 1s;
+        z-index: 1;
+        width: 75% ;
+    }
+    .nav_responsive_li{
+        width: 100%;
+        text-align: center;
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #acfdb3;
+    }
+    .nav_responsive_li a{
+        text-decoration: none;
+        box-sizing: border-box;
+        text-align: center;
+        margin-right: 5px;
+        width: 30px;
+        color: whitesmoke;
+        font-size:small;
+        letter-spacing: 5px;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 100;
+    } 
+    .nav_responsive_ul:hover > .nav_li-container {
+        top: -27px;
+    }
+}
+
 @keyframes aparecer {
     0% {
       opacity: 0;
@@ -72,9 +155,4 @@ header{
       opacity: 1;
     }
 }
-}
-@media only screen and (max-width:700px){
-    .listadoNavegacion{
-        display: none;
-    }
-}
+

@@ -10,24 +10,28 @@
         padding: 1rem;
         border-top: dotted 5px #4CFDB3;
         border-right: dotted 5px #4CFDB3;
+        height: 100%;
     }
     .registro{
         grid-area: 2/2;
         padding: 1rem;
         border-top: dotted 5px #4CFDB3;
         border-left: dotted 5px #4CFDB3;
+        height: 100%;
     }
     .derechos{
         grid-area: 3/1;
         padding: 1rem;
         border-top: dotted 5px #4CFDB3;
         border-right: dotted 5px #4CFDB3;
+        height: 100%;
     }
     .asesoramiento{
         grid-area: 4/2;
         padding: 1rem;
         border-top: dotted 5px #4CFDB3;
         border-left: dotted 5px #4CFDB3 ;
+        height: 100%;
         ul{
             li{
                 display: block;
@@ -48,6 +52,10 @@
                 color: whitesmoke;
                 font-size: 1rem;
             }
+        }
+        a{
+            color: whitesmoke;
+            font-size: 14px;
         }
     }
     
