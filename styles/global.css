@@ -144,11 +144,19 @@ header {
     font-weight: normal;
     text-decoration: none;
     color: whitesmoke;
-    padding-left: 20%;
     line-height: 40px;
     transition: color .5s; }
   header .logo:hover {
     color: #ACFDB3; }
+  header .logo2 {
+    max-width: 9%;
+    max-height: 100%;
+    display: inline-block;
+    margin-bottom: 11px;
+    margin-right: 6px; }
+
+.container-fluid {
+  background-color: black; }
 
 .nav_responsive_ul {
   display: none; }
@@ -208,6 +216,8 @@ header {
   display: none; }
 
 @media only screen and (max-width: 768px) {
+  .logo2 {
+    max-width: 50%; }
   .listadoNavegacion {
     display: none; }
   nav {
@@ -327,7 +337,24 @@ footer {
     color: #404040;
     font-weight: bold; }
 
-/*MAIN - PAGINA DE MARCAS*/
+/* PAGINA DE MARCAS*/
+.frase3 {
+  background-image: url(/imagenes/rasgado.jpg);
+  background-repeat: round;
+  background-size: cover;
+  width: 100%;
+  height: 401px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .frase3 p {
+    text-align: center;
+    color: black;
+    font-size: x-large;
+    font-weight: bold; }
+
 .info {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -362,6 +389,22 @@ footer {
       color: whitesmoke;
       font-size: 1rem;
       text-decoration: none; }
+
+/* PAGINA DE PATENTES*/
+.frase5 {
+  background-image: url(/imagenes/TitlePage.png);
+  background-size: cover;
+  width: 100%;
+  height: 401px;
+  padding: 50px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end; }
+  .frase5 p {
+    text-align: center;
+    color: #4CFDB3;
+    font-size: x-large; }
 
 .infoPatentes {
   display: grid;
@@ -433,8 +476,7 @@ footer {
 
 /*---CONTACT US---*/
 .formulario1 {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-  margin-bottom: 100%; }
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3); }
 
 @media (min-width: 768px) {
   .formulario1 {
@@ -508,7 +550,24 @@ button {
   .maps h2 {
     width: fit-content; }
 
-/*MAIN - PAGINA DE MODELOS*/
+/*PAGINA DE MODELOS*/
+.frase4 {
+  background-image: url(/imagenes/divisor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  .frase4 p {
+    text-align: center;
+    color: #66fabd;
+    font-size: x-large;
+    font-weight: bold; }
+
 /*MAIN - PAGINA DE INICIO*/
 main .divPortada {
   background-image: url(../imagenes/splash.gif);
@@ -593,18 +652,18 @@ main .divPortada {
     position: relative;
     height: 150px; }
     .gridClients figure img {
-      max-width: 100%;
+      max-width: 50%;
       max-height: 100%;
       filter: grayscale(100%);
       mix-blend-mode: multiply; }
 
 @media screen and (min-width: 768px) {
   .padreInicio {
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr; } }
 
 @media screen and (min-width: 1024px) {
   .padreInicio {
-    grid-template-columns: 1fr 1fr 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr 1fr; } }
 
 @media screen and (max-width: 375px) {
   .gridClients {

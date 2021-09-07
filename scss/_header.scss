@@ -22,13 +22,22 @@ header{
     font-weight:normal;
     text-decoration: none;
     color: whitesmoke;
-    padding-left: 20%;
     line-height:40px;
     transition: color .5s;
     }
        .logo:hover{
         color: #ACFDB3;
     }
+    .logo2{
+        max-width: 9%;
+        max-height: 100%;
+        display: inline-block;
+        margin-bottom: 11px;
+        margin-right: 6px;
+    }
+}
+.container-fluid{
+    background-color: black;
 }
 .nav_responsive_ul{
         display: none;
@@ -92,6 +101,9 @@ header{
     display: none;
 }
 @media only screen and (max-width:$tablet){
+    .logo2{
+        max-width: 50%;
+    }
     .listadoNavegacion{
             display: none;
         }

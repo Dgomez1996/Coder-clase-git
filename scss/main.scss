@@ -108,7 +108,7 @@ main{
         position: relative;
         height: 150px;
         img{
-            max-width: 100%;
+            max-width: 50%;
             max-height: 100%;
             filter: grayscale(100%);
             mix-blend-mode: multiply;
@@ -118,12 +118,12 @@ main{
 }
 @media screen and (min-width:$tablet) {
     .padreInicio{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 @media screen and (min-width:$laptop) {
     .padreInicio{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr ;
     }
 }   
 @media screen and (max-width:375px) {

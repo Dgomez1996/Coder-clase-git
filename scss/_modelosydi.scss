@@ -1,1 +1,21 @@
-/*MAIN - PAGINA DE MODELOS*/
+/*PAGINA DE MODELOS*/
+.frase4{
+    background-image: url(/imagenes/divisor.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    p{
+        text-align: center;
+        color: #66fabd;
+        font-size: x-large;
+        font-weight: bold;
+
+    }
+
+} 
