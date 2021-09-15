@@ -592,7 +592,7 @@ main .divPortada {
   color: #ACFDB3; }
 
 .frase2 {
-  background-image: url(/imagenes/arquitectura2.jpg);
+  background-image: url(imagenes/arquitectura2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
